@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DEVFORGE Student Support AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div>
+
+                <h2>DEVFORGE</h2>
+
+                <span>Student Support AI</span>
+
+            </div>
+
+        </div>
+
+        <div class="menu">
+
+            <button class="menu-btn active">
+                <i class="fa-solid fa-comments"></i>
+                New Chat
+            </button>
+
+            <button class="menu-btn">
+                <i class="fa-solid fa-book"></i>
+                Learning Topics
+            </button>
+
+            <button class="menu-btn">
+                <i class="fa-solid fa-code"></i>
+                Projects
+            </button>
+
+            <button class="menu-btn">
+                <i class="fa-solid fa-circle-info"></i>
+                About
+            </button>
+
+        </div>
+
+        <div class="status-card">
+
+            <div class="status-dot"></div>
+
+            <div>
+
+                <h4>AI Status</h4>
+
+                <p>Online</p>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="chat-section">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>DEVFORGE Learning Assistant</h1>
+
+                <p>
+                    Ask questions about Python, FastAPI, LangGraph,
+                    AI Engineering, GitHub and Render Deployment.
+                </p>
+
+            </div>
+
+            <button id="clearBtn">
+
+                <i class="fa-solid fa-trash"></i>
+
+                Clear Chat
+
+            </button>
+
+        </header>
+
+        <!-- Suggested Questions -->
+
+        <div class="suggestions">
+
+            <button class="suggestion">
+                How do I deploy FastAPI on Render?
+            </button>
+
+            <button class="suggestion">
+                Explain LangGraph workflow
+            </button>
+
+            <button class="suggestion">
+                What is Retrieval Augmented Generation?
+            </button>
+
+            <button class="suggestion">
+                Help me with my DEVFORGE assignment
+            </button>
+
+        </div>
+
+        <!-- Chat Area -->
+
+        <div id="chat-box" class="chat-box">
+
+            <div class="bot-message">
+
+                <div class="avatar">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                </div>
+
+                <div class="bubble">
+
+                    <h3>Hello 👋</h3>
+
+                    <p>
+
+                        Welcome to DEVFORGE Student Support AI.
+
+                    </p>
+
+                    <p>
+
+                        I can help you with:
+
+                    </p>
+
+                    <ul>
+
+                        <li>Python</li>
+
+                        <li>FastAPI</li>
+
+                        <li>LangChain</li>
+
+                        <li>LangGraph</li>
+
+                        <li>GitHub</li>
+
+                        <li>Render Deployment</li>
+
+                        <li>AI Engineering</li>
+
+                        <li>DEVFORGE Internship</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Input -->
+
+        <div class="chat-input">
+
+            <input
+                id="message"
+                type="text"
+                placeholder="Type your question..."
+            >
+
+            <button id="sendBtn">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
